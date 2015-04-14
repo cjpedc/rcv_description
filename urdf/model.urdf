@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<robot name="RCV">
+
+  <link name="base">
+
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="2 4 .5" />
+      </geometry>
+      <material name="metal"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="2 4 .5" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="camera1">
+    <visual>
+      <origin xyz="0 0 1.5"/>
+      <geometry>
+        <box size=".25 .065 .065" />
+      </geometry>
+      <material name="plastic" />
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 1.5"/>
+      <geometry>
+        <box size=".25 .065 .065" />
+      </geometry>
+      <contact_coefficients/>
+    </collision>
+  </link>
+
+
+  <joint name="camera1connect" type="fixed">
+    <origin xyz="0 0 1.5" rpy="0 0 0"/>
+    <parent link="base"/>
+    <child link="camera1"/>
+  </joint>
+
+</robot>

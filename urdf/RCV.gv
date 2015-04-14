@@ -1,0 +1,8 @@
+digraph G {
+node [shape=box];
+"base" [label="base"];
+"camera1" [label="camera1"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base" -> "camera1connect" [label="xyz: 0 1 1 \nrpy: 0 -0 0"]
+"camera1connect" -> "camera1"
+}
