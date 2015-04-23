@@ -8,7 +8,9 @@
       <geometry>
         <box size="2 4 .5" />
       </geometry>
-      <material name="metal"/>
+      <material name="metal">
+        <color rgba="0 0 255 0.8" />
+      </material>
     </visual>
 
     <collision>
@@ -21,15 +23,17 @@
 
   <link name="camera1">
     <visual>
-      <origin xyz="0 0 1.5"/>
+      <origin xyz="0 0 0"/>
       <geometry>
         <box size=".25 .065 .065" />
       </geometry>
-      <material name="plastic" />
+      <material name="plastic" >
+        <color rgba="0 177.5 0 0.9" />
+      </material>
     </visual>
 
     <collision>
-      <origin xyz="0 0 1.5"/>
+      <origin xyz="0 0 0"/>
       <geometry>
         <box size=".25 .065 .065" />
       </geometry>
