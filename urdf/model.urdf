@@ -6,7 +6,7 @@
     <visual>
       <origin xyz="0 0 0"/>
       <geometry>
-        <box size="2 4 .5" />
+        <box size="4 2 .5" />
       </geometry>
       <material name="metal">
         <color rgba="0 0 255 0.8" />
@@ -16,7 +16,7 @@
     <collision>
       <origin xyz="0 0 0"/>
       <geometry>
-        <box size="2 4 .5" />
+        <box size="4 2 .5" />
       </geometry>
     </collision>
   </link>
@@ -25,7 +25,7 @@
     <visual>
       <origin xyz="0 0 0"/>
       <geometry>
-        <box size=".25 .065 .065" />
+        <box size=".065 .25 .065" />
       </geometry>
       <material name="plastic" >
         <color rgba="0 177.5 0 0.9" />
@@ -35,7 +35,7 @@
     <collision>
       <origin xyz="0 0 0"/>
       <geometry>
-        <box size=".25 .065 .065" />
+        <box size=".065 .25 .065" />
       </geometry>
       <contact_coefficients/>
     </collision>
